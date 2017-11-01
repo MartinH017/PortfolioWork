@@ -1,0 +1,22 @@
+.MainImage{
+  width: 30em;
+  height: auto;
+  }
+.BlueText{
+  color: blue;
+  font-family: Verdana;
+  }
+  .OrangeBackground{
+    background-color: orange;
+    font-family: Verdana;
+  }
+  #SubHeader{
+    font-family: Garamond;
+  }
+  body{
+    background-color: #dfdfdf;
+  }
+  h1{
+    color: red;
+    font-family: Verdana;
+  }
