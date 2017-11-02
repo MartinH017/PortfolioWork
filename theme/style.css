@@ -20,3 +20,14 @@
     color: red;
     font-family: Verdana;
   }
+
+/* Start of blog styles*/
+
+.MainContentImage{
+  width: 40em;
+  height: auto;
+}
+.Content{
+  padding: 50px;
+  border: 2px solid red;
+}
