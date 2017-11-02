@@ -14,7 +14,6 @@
     font-family: Garamond;
   }
   body{
-    background-color: #dfdfdf;
     margin: 0px;
   }
   h1{
@@ -24,33 +23,40 @@
 
 /* Start of blog styles*/
 
-.ContentImageMyself{
-  margin: auto;
-}
 .MainContentImage{
-  width: 40em;
+  width: 20em;
   height: auto;
   margin: auto;
+  float: right;
+  margin-left: 20px;
+  padding: 10px 0px 20px 10px;
 }
 .Content{
-  padding: 35px;
-  border: 2px solid red;
-  margin: 20px;
+  padding: 20px;
+  margin: 10px;
   background-color: white;
+  display: block;
 }
 .Container{
   max-width: 750px;
   margin: 10px auto;
+  display: block;
 }
 .Nav{
   background-color: #c0a8ff;
-  padding: 10px;
   list-style: none;
   display: block;
 }
-ul>li {
+.Nav>.Container {
+  padding: 0px;
+}
+.Nav>ul>li {
   background-color: orange;
   list-style:none;
+  display: inline-block;
+  font-size: 110%;
+  font-family: Roboto;
+  padding: 10px;
 }
 .Header{
   background-color: #6bed67;
@@ -58,9 +64,9 @@ ul>li {
   margin: 5px 0px;
 }
 .Footer{
-  background-color: yellow;
+  background-color: #6bed67;
   padding: 25px;
 }
-div + .Footer{
-  background-color: gold;
+.Footer>.Container{
+  font-family: Verdana;
 }
