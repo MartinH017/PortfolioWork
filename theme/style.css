@@ -15,6 +15,7 @@
   }
   body{
     background-color: #dfdfdf;
+    margin: 0px;
   }
   h1{
     color: red;
@@ -23,11 +24,43 @@
 
 /* Start of blog styles*/
 
+.ContentImageMyself{
+  margin: auto;
+}
 .MainContentImage{
   width: 40em;
   height: auto;
+  margin: auto;
 }
 .Content{
-  padding: 50px;
+  padding: 35px;
   border: 2px solid red;
+  margin: 20px;
+  background-color: white;
+}
+.Container{
+  max-width: 750px;
+  margin: 10px auto;
+}
+.Nav{
+  background-color: #c0a8ff;
+  padding: 10px;
+  list-style: none;
+  display: block;
+}
+ul>li {
+  background-color: orange;
+  list-style:none;
+}
+.Header{
+  background-color: #6bed67;
+  padding: 10px;
+  margin: 5px 0px;
+}
+.Footer{
+  background-color: yellow;
+  padding: 25px;
+}
+div + .Footer{
+  background-color: gold;
 }
