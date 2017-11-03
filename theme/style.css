@@ -16,13 +16,38 @@
   body{
     margin: 0px;
   }
-  h1{
-    color: red;
-    font-family: Verdana;
-  }
 
 /* Start of blog styles*/
 
+#FunkyList li:first-child{
+  background-color: gold;
+}
+#FunkyList li:last-child{
+  background-color: gold;
+}
+#FunkyList li:nth-child(3){
+  background-color: lightcoral;
+}
+#FunkyList li:hover{
+  background-color: yellow;
+}
+#FunkyList a{
+  color: black;
+}
+#FunkyList a:hover{
+  color: blue;
+}
+
+.Header{
+  background-color: #6bed67;
+  padding: 5px;
+}
+.Header>.Container{
+  color: Blue;
+  font-family: Verdana;
+  margin-top: 80px;
+  /*text-align: center;*/
+}
 .MainContentImage{
   width: 20em;
   height: auto;
@@ -46,26 +71,40 @@
   background-color: #c0a8ff;
   list-style: none;
   display: block;
+  position: fixed;
+  top: 1;
+  right: 1;
+  width: 100vw ;
 }
 .Nav>.Container {
   padding: 0px;
 }
-.Nav>ul>li {
+.Nav> ul >li {
   background-color: orange;
   list-style:none;
   display: inline-block;
   font-size: 110%;
   font-family: Roboto;
   padding: 10px;
+  margin:0px;
+  position: relative;
 }
-.Header{
-  background-color: #6bed67;
-  padding: 10px;
-  margin: 5px 0px;
+.Nav .NavDropdowns{
+  display: none;
+  list-style: none;
+  padding: 5px;
+  position: absolute;
+  top: 30px;
+  right: 1px;
 }
+.Nav a:hover + .NavDropdowns,
+.NavDropdowns:hover{
+  display: block;
+}
+
 .Footer{
   background-color: #6bed67;
-  padding: 25px;
+  padding: 15px;
 }
 .Footer>.Container{
   font-family: Verdana;
