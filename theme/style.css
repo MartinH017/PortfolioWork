@@ -45,7 +45,7 @@
 .Header>.Container{
   color: Blue;
   font-family: Verdana;
-  margin-top: 80px;
+  margin-top: 10px;
   /*text-align: center;*/
 }
 .MainContentImage{
@@ -71,9 +71,9 @@
   background-color: #c0a8ff;
   list-style: none;
   display: block;
-  position: fixed;
-  top: 1;
-  right: 1;
+  position: sticky;
+  top: 0;
+  right: 0;
   width: 100vw ;
 }
 .Nav>.Container {
