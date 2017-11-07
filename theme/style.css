@@ -17,7 +17,7 @@
     margin: 0px;
   }
 
-/* Start of blog styles*/
+/* Start of blog styles----------------------------------------------*/
 
 #FunkyList li:first-child{
   background-color: gold;
@@ -108,4 +108,10 @@
 }
 .Footer>.Container{
   font-family: Verdana;
+}
+input[type="text"]{
+  background-color:tomato;
+}
+input[type="checkbox"]{
+  margin: 15px;
 }
