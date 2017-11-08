@@ -1,0 +1,24 @@
+#Grid{
+  display: grid;
+}
+
+#Grid > div {
+  background-color: lightcoral;
+  padding: 1em;
+  margin: 0.25em;
+}
+
+#Grid > div:first-child{
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 415px){
+
+  #Grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #Grid > div {
+    background-color: lightblue;
+  }
+}
