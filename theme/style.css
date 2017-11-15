@@ -37,6 +37,9 @@
 #FunkyList a:hover{
   color: blue;
 }
+#storyBG {
+  background-color: lightcoral;
+}
 
 .Header{
   background-color: #6bed67;
