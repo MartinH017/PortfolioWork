@@ -7,17 +7,16 @@ var story = {
     "dive and catch": {
 
         "text": "As you dive to catch the beehive, you scrape your knee on a rusty nail engulfed with tetanus but catch the beehive. The queen bee flys out and offers to cure your tetanus with magical honey, do you accept?",
-        "choices": [ "yes", "no" ]
+        "choices": [ "yes", "no", "stand and watch" ]
     },
 
     "stand and watch": {
 
         "text": "You take a step back to avoid any casulties, slip on a banana peel and break your neck",
 
-        /* "You take a step back to avoid any casulties, and notice the beehive will land directly on a young boy eating icecream with his puppy. The thought crosses your mind, should I warn the boy, or stay silent.",
-        "choices": [ "warn", "silent" ]*/
-    },
 
+    },
+    
     "yes": {
 
         "text": "You eat the magic honey and die from an allergic reaction.",
@@ -33,12 +32,20 @@ var story = {
 var runStory = function runStory( branch ){
     var chapter = story[branch];
     var choices = chapter.choices;
+    var isValidChoice = false;
     var choice;
 
     if( choices ){
         choice = prompt( chapter.text );
 
-        if( choice === choices[0] || choice === choices[1] ){
+        // validate choice here
+        for( var i = 0; i < choices.length; i++ ){
+            if( choice === choices[i] ){
+                isValidChoice = true;
+            }
+        }
+
+        if( isValidChoice ){
             runStory( choice );
         }
         else{
