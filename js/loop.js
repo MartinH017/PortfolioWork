@@ -1,4 +1,17 @@
 /* eslint-disable complexity, no-console */
+var generateEvenListItems = function generateEvenListItems(){
+    var evens = document.querySelector( "#evens" );
+    var listItemString = "";
+
+    for( var i = 2; i < 20; i += 2 ){
+        listItemString += "<li>";
+        listItemString += i * 2;
+        listItemString += "</li>";
+    }
+    evens.innerHTML = listItemString;
+};
+
+
 var fizzBuzzResult = "";
 
 var fizzBuzz = function fizzBuzz( num ){
@@ -25,9 +38,18 @@ var fizzBuzzLightYear = function fizzBuzzLightYear( limit ){
     }
 };
 
+var makeListItems = function makeListItems(){
+    var listItems = document.querySelectorAll( "li" );
+
+    for( var i = 0; i < listItems.length;i++ ){
+        listItems[i].textContent = i + 1;
+    }
+};
+
 fizzBuzzLightYear( 50 );
+makeListItems();
+generateEvenListItems();
 
 document
     .querySelector( "#fizzBuzz" )
     .textContent = fizzBuzzResult;
-// document querySelectorAll
